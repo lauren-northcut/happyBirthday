@@ -1,4 +1,4 @@
-#myImg:hover {opacity: 0.7;}
+#myImg, #myImg2:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
