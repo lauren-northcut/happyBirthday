@@ -77,3 +77,26 @@ var span3 = document.getElementsByClassName("close3")[0];
 span3.onclick = function() {
   modal3.style.display = "none";
 };
+
+
+// Lauren's Birthday Wishes
+
+var modal5 = document.getElementById("myModal3");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img5 = document.getElementById("myImg3");
+var modalImg5 = document.getElementById("img03");
+var captionText5 = document.getElementById("caption");
+  img5.onclick = function(){
+  modal5.style.display = "block";
+  modalImg5.src = this.src;
+  captionText5.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+
+// When the user clicks on <span> (x), close the modal
+span5.onclick = function() {
+  modal5.style.display = "none";
+};
