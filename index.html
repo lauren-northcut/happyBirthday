@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
     />
+    <link rel="stylesheet" href="css/extra.css" />
     <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- https://getbootstrap.com/ -->
@@ -23,6 +24,7 @@
   </head>
 
   <body>
+    
     <!-- Loader -->
     <div id="loader-wrapper">
       <div id="loader"></div>
@@ -40,7 +42,7 @@
               <a href="#" data-linkid="0" data-align="right" class="tm-nav-link">Intro</a>
             </li>
             <li class="tm-nav-item">
-              <a href="#" data-linkid="1" data-align="right" class="tm-nav-link">Autumn-Bottom</a>
+              <a href="#" data-linkid="1" data-align="left" class="tm-nav-link">Autumn-Bottom</a>
             </li>
             <li class="tm-nav-item">
               <a
@@ -94,10 +96,21 @@
 
               <!-- Section 1 -->
               <section class="tm-section tm-section-1">
+                <div id="myModal" class="modal">
+
+                  <!-- The Close Button -->
+                  <span class="close">&times;</span>
+                
+                  <!-- Modal Content (The Image) -->
+                  <img class="modal-content" id="img01">
+                
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                </div>
                 <div class="tm-textbox tm-textbox-2 tm-bg-dark">
                   <h2 class="tm-text-blue mb-4">Autumn</h2>
-                  <p class="mb-4">
-                    Your Birthday Wishes
+                  <p class="mb-4"></p>
+                    <img src="img/WishesFromAutumn.PNG" id="myImg" class="img-thumbnail" alt="...">
                   </p>
                   
                   <a
@@ -108,6 +121,7 @@
                     >Next</a
                   >
                 </div>
+         
               </section>
 
               <!-- Section 2 -->
@@ -160,6 +174,14 @@
         </footer>
       </div>
     </div>
+<!-- Added this line of code in order to add the mp4 transition -- css of this is located inside of the tooplate css (personally added by me LN) -->
+    <div class="fullscreen-bg">
+      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+          <source src="img/Ill Love You Forever.MP4" type="video/webm">
+          <!-- <source src="video/big_buck_bunny.mp4" type="video/mp4"> -->
+          <!-- <source src="video/big_buck_bunny.ogv" type="video/ogg"> -->
+      </video>
+  </div>
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/background.cycle.js"></script>
@@ -220,7 +242,6 @@
         bgCycle = $("body").backgroundCycle({
           imageUrls: [
             "img/Outer Space Video Zoom Virtual Background.png",
-            "img/Nature Sunset Zoom Virtual Background.png",
             "img/photo-04.jpg",
             "img/ryan.png",
             "img/photo-05.jpg"
@@ -334,5 +355,6 @@
         });
       }
     </script>
+    <script src="js/extras.js"></script>
   </body>
 </html>
